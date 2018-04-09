@@ -3,7 +3,7 @@ class PigLatinizer
 
   def piglatinize(input)
     if input.match(/\s/) == nil
-      word(input)
+      one_word(input)
     else
       sentence = []
       words = input.split(" ")
