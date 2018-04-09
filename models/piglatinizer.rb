@@ -3,6 +3,13 @@ class PigLatinizer
 
   def piglatinize(input)
     if input.match(/\s/) == nil
+      word(input)
+    else
+      input.split(" ")
+    binding.pry
+  end
+  
+  def word(input)
     if word.downcase.match(/\A[aeiou]/) == nil
       letters = word.slice!(/\A[^aeiou]*/)
       letters << "ay"
@@ -11,10 +18,6 @@ class PigLatinizer
       word << "way"
     end
     word
-    binding.pry
-  end
-  
-  def word(input)
   end
   
   def sentence(input)
