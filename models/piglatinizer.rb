@@ -11,7 +11,7 @@ class PigLatinizer
       one_word(input)
     else
       sentence = []
-      words = input.split(" ")
+      words = text.split(" ")
       words.each do |i| 
         sentence << one_word(i)
       end
