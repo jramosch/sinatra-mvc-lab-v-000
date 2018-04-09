@@ -7,7 +7,7 @@ class PigLatinizer
   end
 
   def piglatinize
-    if input.match(/\s/) == nil
+    if text.match(/\s/) == nil
       one_word(input)
     else
       sentence = []
@@ -19,9 +19,9 @@ class PigLatinizer
     end
   end
   
-  def one_word(word)
-    if word.downcase.match(/\A[aeiou]/) == nil
-      letters = word.slice!(/\A[^aeiou]*/)
+  def one_word
+    if text.downcase.match(/\A[aeiou]/) == nil
+      letters = text.slice!(/\A[^aeiou]*/)
       letters << "ay"
       word << letters
     else
