@@ -5,4 +5,7 @@ class App < Sinatra::Base
   get '/' do
     erb :index
   end
+  
+  post '/piglatinize' do
+  end
 end
