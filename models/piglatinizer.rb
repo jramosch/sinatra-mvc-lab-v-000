@@ -13,7 +13,7 @@ class PigLatinizer
       sentence.join(" ")
   end
   
-  def word(input)
+  def one_word(input)
     if word.downcase.match(/\A[aeiou]/) == nil
       letters = word.slice!(/\A[^aeiou]*/)
       letters << "ay"
