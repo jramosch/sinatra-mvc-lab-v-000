@@ -1,8 +1,8 @@
 require 'pry'
 class PigLatinizer
 
-  def piglatinize(word)
-    vowels = ["a","e","i","o","u"]
+  def piglatinize(words)
+    
     if word.downcase.match(/\A[aeiou]/) == nil
       letters = word.slice!(/\A[^aeiou]*/)
       letters << "ay"
