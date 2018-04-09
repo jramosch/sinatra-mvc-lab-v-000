@@ -11,6 +11,7 @@ class PigLatinizer
         sentence << word(i)
       end
       sentence.join(" ")
+    end
   end
   
   def one_word(word)
