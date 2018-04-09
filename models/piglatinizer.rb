@@ -11,7 +11,6 @@ class PigLatinizer
         sentence << word(i)
       end
       sentence.join(" ")
-    binding.pry
   end
   
   def word(input)
