@@ -23,11 +23,11 @@ class PigLatinizer
     if text.downcase.match(/\A[aeiou]/) == nil
       letters = text.slice!(/\A[^aeiou]*/)
       letters << "ay"
-      word << letters
+      text << letters
     else
-      word << "way"
+      text << "way"
     end
-    word
+    text
   end
 end
 
