@@ -1,5 +1,6 @@
 require 'pry'
 class PigLatinizer
+  attr_reader :text
 
   def piglatinize(input)
     if input.match(/\s/) == nil
