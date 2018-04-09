@@ -14,6 +14,10 @@ class PigLatinizer
     binding.pry
   end
   
-  def one_word(word)
+  def word(input)
+  end
+  
+  def sentence(input)
+  end
 end
 
