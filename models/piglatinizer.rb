@@ -10,6 +10,7 @@ class PigLatinizer
       word << "way"
     end
     word
+    binding.pry
   end
 end
 
