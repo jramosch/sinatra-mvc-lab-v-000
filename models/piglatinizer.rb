@@ -6,7 +6,7 @@ class PigLatinizer
     @text = text
   end
 
-  def piglatinize(input)
+  def piglatinize
     if input.match(/\s/) == nil
       one_word(input)
     else
