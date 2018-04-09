@@ -2,7 +2,7 @@ require 'pry'
 class PigLatinizer
 
   def piglatinize(input)
-    if words.match(/\s/) == nil
+    if input.match(/\s/) == nil
     if word.downcase.match(/\A[aeiou]/) == nil
       letters = word.slice!(/\A[^aeiou]*/)
       letters << "ay"
