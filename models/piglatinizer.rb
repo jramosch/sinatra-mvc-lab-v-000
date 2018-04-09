@@ -5,7 +5,11 @@ class PigLatinizer
     if input.match(/\s/) == nil
       word(input)
     else
-      input.split(" ")
+      sentence = ""
+      words = input.split(" ")
+      words.each do |i| 
+        word(i)
+        
     binding.pry
   end
   
