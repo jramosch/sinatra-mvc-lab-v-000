@@ -23,8 +23,5 @@ class PigLatinizer
     end
     word
   end
-  
-  def sentence(input)
-  end
 end
 
