@@ -8,8 +8,9 @@ class PigLatinizer
       sentence = []
       words = input.split(" ")
       words.each do |i| 
-        word(i)
-        
+        sentence << word(i)
+      end
+      sentence.join(" ")
     binding.pry
   end
   
